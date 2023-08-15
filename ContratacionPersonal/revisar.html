@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Oferta Laboral</title>
+</head>
+<body>
+    <h1>Crear Oferta Laboral</h1>
+    <form action="procesar_oferta.php" method="post">
+        <label for="puesto">Puesto de trabajo:</label>
+        <input type="text" id="puesto" name="puesto" required><br><br>
+        
+        <label for="descripcion">Descripción del trabajo:</label><br>
+        <textarea id="descripcion" name="descripcion" rows="4" cols="50" required></textarea><br><br>
+        
+        <label for="requisitos">Requisitos:</label><br>
+        <textarea id="requisitos" name="requisitos" rows="4" cols="50" required></textarea><br><br>
+        
+        <label for="ubicacion">Ubicación:</label>
+        <input type="text" id="ubicacion" name="ubicacion" required><br><br>
+        
+        <label for="salario">Salario:</label>
+        <input type="number" id="salario" name="salario" required><br><br>
+        
+        <label for="contacto">Información de contacto:</label><br>
+        <textarea id="contacto" name="contacto" rows="4" cols="50" required></textarea><br><br>
+        
+        <button type="submit">Publicar Oferta</button>
+    </form>
+</body>
+</html>

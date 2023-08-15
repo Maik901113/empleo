@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contratación de Candidato</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+        background-color: #3c5312;
+    }
+
+    h1 {
+        color: #333;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        color: #333;
+        text-align: center;
+        font-size: 24px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        color: #333;
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    strong {
+        font-weight: bold;
+        color: #007BFF;
+    }
+
+    ul {
+        list-style-type: disc;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        margin-bottom: 15px;
+    }
+
+    p em {
+        font-style: italic;
+    }
+
+    /* Enlace de video */
+    .video-link {
+        display: block;
+        color: #007BFF;
+        margin-top: 10px;
+        text-decoration: none;
+    }
+
+    .video-link:hover {
+        text-decoration: underline;
+    }
+
+    form {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    .boton-confirmar {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: #fff;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .boton-confirmar:hover {
+        background-color: #0056b3;
+    }
+   
+</style>
+
+<body>
+    <h1>Contratación de Candidato</h1>
+    <form action="procesar_publicacion.php" method="post">
+        <h2>Detalles de la Contratación</h2>
+        <p><strong>Candidato:</strong> Michael David Garcia</p>
+        <p><strong>Puesto:</strong> Desarrollador</p>
+    
+        <h3>Información de Contrato</h3>
+        <p><strong>Fecha de Inicio:</strong> 15 agosto de 2023</p>
+        <p><strong>Salario mensual:</strong> $5´000´000</p>
+        <p><strong>Ubicación:</strong> Bogota Colombia</p>
+        <a href="https://actualicese.com/formatos-para-elaborar-contratos-de-trabajo/" class="Descargar Contrato">Descargar Contrato</a>
+        <a href="https://www.youtube.com/watch?v=m5RCYnIS8RA" class="video-link">Ver video de bienvenida</a>
+        <h3>Beneficios</h3>
+        <ul>
+            <li>Seguro médico y dental</li>
+            <li>Plan de jubilación 800(semanas)</li>
+            <li>Horario flexible</li>
+            <li>Modalidad Teletrabajo</li> 
+        </ul>
+    
+        <h3>Instrucciones</h3>
+        <p>Descargue su contrato, lealo detenidamente, si se encuentra de acuerdo, firma el contrato, adjunta el contrato firmado y confirma tu contratacion.</p>
+    
+        <p><em>¡Bienvenido al equipo! Esperamos trabajar contigo y alcanzar grandes logros juntos.</em></p>
+        
+        <input type="file" name="archivo_adjunto" accept=".pdf,.doc,.docx">
+        <button type="submit" class="boton-confirmar">Confirmar Contratación</button>
+    
+    </form>
+</body>
+</html>

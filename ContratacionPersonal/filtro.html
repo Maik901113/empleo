@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtros de Candidatos</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+        background-color: #f4f4f4;
+    }
+
+    h1 {
+        color: #660909;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    form {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    select, input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #b84d4d;
+        border-radius: 5px;
+    }
+
+    button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: #fc7474;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #6f7c8a;
+    }
+</style>
+<body>
+    <h1>Filtros de Candidatos</h1>
+    <form action="procesar_filtro.php" method="get">
+        <label for="experiencia">Experiencia:</label>
+        <select id="experiencia" name="experiencia">
+            <option value="novato">Novato</option>
+            <option value="intermedio">Intermedio</option>
+            <option value="experimentado">Experimentado</option>
+        </select><br><br>
+        
+        <label for="ubicacion">Ubicación:</label>
+        <input type="text" id="ubicacion" name="ubicacion"><br><br>
+        <label for="educacion">Educación:</label>
+        <select id="educacion" name="educacion">
+            <option value="secundaria">Secundaria</option>
+            <option value="terciaria">Terciaria</option>
+            <option value="universitaria">Universitaria</option>
+        </select><br><br>
+        
+        <button type="submit">Filtrar Candidatos</button>
+    </form>
+</body>
+</html>

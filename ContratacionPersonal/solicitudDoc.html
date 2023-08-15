@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Solicitud de Documentos para Candidatos</title>
+</head>
+<body>
+    <h1>Formulario de Solicitud de Documentos para Candidatos</h1>
+    <form action="procesar_solicitud.php" method="post" enctype="multipart/form-data">
+        <label for="nombre">Nombre completo del candidato:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        
+        <label for="documento">Seleccione el tipo de documento:</label>
+        <select id="documento" name="documento" required>
+            <option value="curriculum">Currículum Vitae</option>
+            <option value="carta">Carta de Presentación</option>
+            <option value="otros">Otros</option>
+        </select><br><br>
+        
+        <label for="archivo">Cargar el documento (PDF o Word):</label>
+        <input type="file" id="archivo" name="archivo" accept=".pdf, .doc, .docx" required><br><br>
+        
+        <label for="comentarios">Comentarios adicionales:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+        
+        <button type="submit">Enviar Solicitud</button>
+    </form>
+</body>
+</html>
